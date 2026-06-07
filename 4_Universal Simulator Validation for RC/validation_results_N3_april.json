@@ -1,0 +1,39 @@
+{
+    "validation_period": "April (first week)",
+    "date_range": {
+        "start": "2024-04-01 00:20:00",
+        "end": "2024-04-08 00:00:00"
+    },
+    "n_timesteps": 1007,
+    "model": {
+        "N_sections": 3,
+        "version": "v5.1_DE_optimized",
+        "parameters": {
+            "C_air": 84426246.51832934,
+            "C_env": 661376048.5634619,
+            "C_int": 6002555765.428176,
+            "C_rad": 597376.9622532368,
+            "R_ex": 0.0003079967462046204,
+            "R_ae": 0.00016180515492072352,
+            "R_ai": 5.818704417041902e-05,
+            "K_rad": 283.97226311004107,
+            "a_rad": 0.2795410071110868,
+            "A_sol": 0.5598500539656959
+        }
+    },
+    "metrics": {
+        "rmse_C": 1.54553466158833,
+        "mae_C": 1.242244147786656,
+        "mean_bias_C": 1.0672929366372694,
+        "std_residual_C": 1.1178386187527907,
+        "cv_rmse_percent": 6.686581403942767,
+        "autocorrelation": 0.9568855233713529,
+        "max_overprediction_C": 2.251298668147495,
+        "max_underprediction_C": 3.4057647591619755
+    },
+    "verdict": "excellent",
+    "comparison_to_training": {
+        "original_rmse_C": 1.3728071222505147,
+        "original_cv_rmse": 6.075696839211143
+    }
+}

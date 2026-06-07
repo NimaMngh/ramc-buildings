@@ -1,0 +1,32 @@
+{
+    "model_version": "v5.1_DE_optimized",
+    "optimizer": "differential_evolution_workers1",
+    "N_sections": 2,
+    "n_states": 5,
+    "n_parameters": 10,
+    "validation_rmse_C": 1.4403384828273722,
+    "cv_rmse_percent": 6.374573547638919,
+    "mean_residual_C": 0.09049109630909351,
+    "residual_autocorrelation": 0.9416869668822465,
+    "runtime_seconds": 1500.4688246250153,
+    "function_evaluations": 635,
+    "physically_consistent": true,
+    "identified_parameters": {
+        "C_air": 133111469.55423829,
+        "C_env": 1682331167.4076807,
+        "C_int": 5435090641.185721,
+        "C_rad": 2027868.6183615264,
+        "R_ex": 0.0004709420241569777,
+        "R_ae": 5.079158521559407e-05,
+        "R_ai": 6.089219336206492e-05,
+        "K_rad": 282.76663283122076,
+        "a_rad": 0.2627184751633536,
+        "A_sol": 0.564425267674035
+    },
+    "time_constants": {
+        "tau_air_env_h": 1.8780395969547359,
+        "tau_env_out_h": 220.07790146704014,
+        "tau_air_int_h": 91.93183062873065,
+        "tau_rad_min": 48.909515433790865
+    }
+}

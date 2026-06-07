@@ -1,0 +1,19 @@
+# Normalize line endings: store LF in the repo, auto-convert on checkout.
+# (The current source files use Windows CRLF; this keeps the repo consistent.)
+* text=auto
+
+# Treat these as text explicitly
+*.py   text
+*.json text
+*.csv  text
+*.cff  text
+*.md   text
+*.txt  text
+*.idf  text
+*.epw  text
+
+# Treat these as binary (never diff/normalize)
+*.pth  binary
+*.npz  binary
+*.png  binary
+*.pdf  binary

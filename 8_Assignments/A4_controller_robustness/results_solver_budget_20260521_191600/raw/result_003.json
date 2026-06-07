@@ -1,0 +1,19 @@
+{
+  "experiment_id": 3,
+  "model_name": "RAMC_1.5e-3",
+  "n_iter": 25,
+  "scenario": "nominal",
+  "seed": 42,
+  "success": true,
+  "elapsed_s": 498.32288646698,
+  "metrics": {
+    "deg_hours_cold_occ": 7.978757532272343,
+    "cvar90_cold_occ_C": 0.37960663460579575,
+    "peak_cold_violation_occ_C": 0.5993848959022259,
+    "total_energy_kWh": 4730.651235482341,
+    "fallback_rate": 0.0,
+    "median_solve_time_ms": 427.0731210708618,
+    "p95_solve_time_ms": 720.038878917694,
+    "max_solve_time_ms": 1599.719524383545
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "created_utc": "2026-01-30T15:45:41.335309+00:00",
+  "dt_seconds": 600,
+  "episode_days": 7,
+  "n_episodes": 300,
+  "n_samples": 302400,
+  "source_csv": "ASHRAE901_RetailStandalone_STD2022GBaseline_Vasteras_processed.csv",
+  "solar_injection": {
+    "mode": "split_air_int",
+    "enforce_A_sol_in_0_1": false,
+    "note": "In split_air_int mode: Q_solar_air = A_sol * Q_trans, Q_solar_int = (1 - A_sol) * Q_trans."
+  },
+  "csv_signal_semantics": {
+    "I_solar_total": {
+      "meaning": "Enclosure Windows Total Transmitted Solar Radiation Rate",
+      "units": "W",
+      "note": "This is transmitted solar heat rate through windows (not irradiance)."
+    },
+    "A_sol": {
+      "meaning": "dimensionless solar split parameter. In split_air_int mode it is interpreted as the fraction of transmitted solar that goes directly to the air node.",
+      "units": "-"
+    }
+  },
+  "processed_csv_stats": {
+    "T_outdoor": {
+      "min": -26.0,
+      "max": 8.0,
+      "q99": 5.0
+    },
+    "Q_internal_no_solar": {
+      "min": 3689.935654106057,
+      "max": 75727.4729583573,
+      "q99": 75727.4729583573
+    },
+    "I_solar_total": {
+      "min": 0.0,
+      "max": 24882.21226119146,
+      "q99": 20781.606558582844
+    },
+    "T_supply_avg": {
+      "min": 31.620012738320657,
+      "max": 60.000000000000014,
+      "q99": 59.99999999571229
+    },
+    "mdot_water_total": {
+      "min": 0.0,
+      "max": 4.031382442786899,
+      "q99": 3.561255886725525
+    },
+    "Q_solar_total": {
+      "min": 0.0,
+      "max": 24882.21226119146,
+      "q99": 20781.606558582844
+    },
+    "Q_heating_total": {
+      "min": 0.0,
+      "max": 251863.8017181173,
+      "q99": 176258.55808830514
+    }
+  },
+  "solar_column_consistency_check": {
+    "mean_abs_diff_W": 0.0,
+    "q99_abs_diff_W": 0.0,
+    "note": "If these diffs are ~0, the two columns are effectively duplicates."
+  },
+  "occupancy": {
+    "mode": "internal_gains",
+    "q_internal_threshold_W": 27570.608263486094,
+    "occ_target_C": 22.0,
+    "unocc_target_C": 15.56,
+    "deadband_C": 0.5
+  },
+  "disturbance_scaling": {
+    "Q_int_scale_range": [
+      0.95,
+      1.05
+    ],
+    "Q_solar_trans_scale_range": [
+      0.9,
+      1.1
+    ]
+  },
+  "control_bounds": {
+    "T_supply_min_C": 31.620013,
+    "T_supply_max_C": 60.0,
+    "mdot_min_kg_s": 0.0,
+    "mdot_max_kg_s": 4.05,
+    "dT_supply_max_per_step_C": 4.0,
+    "dmdot_max_per_step_kg_s": 0.8
+  },
+  "plant": {
+    "N_sections": 3,
+    "n_states": 6,
+    "integration": {
+      "method": "explicit_euler",
+      "use_adaptive_substeps": true,
+      "substeps_fixed": 6,
+      "substeps_min": 6,
+      "substeps_max": 200,
+      "euler_safety_factor": 0.3,
+      "mdot_floor_for_substeps": 0.01
+    },
+    "state_clip_min_C": -50.0,
+    "state_clip_max_C": 150.0,
+    "diagnostics": {
+      "substep_clip_events_total": 0,
+      "substep_clip_rate_pct": 0.0,
+      "total_substeps": 8385954,
+      "avg_substeps_per_step": 27.731329365079365,
+      "max_substeps_observed": 86,
+      "min_substeps_observed": 6
+    }
+  },
+  "rc_params_path": "results_N3_DE_optimized.json",
+  "rc_params_used": {
+    "C_air": 84426246.51832934,
+    "C_env": 661376048.5634619,
+    "C_int": 6002555765.428176,
+    "C_rad": 597376.9622532368,
+    "R_ex": 0.0003079967462046204,
+    "R_ae": 0.00016180515492072352,
+    "R_ai": 5.818704417041902e-05,
+    "K_rad": 283.97226311004107,
+    "a_rad": 0.2795410071110868,
+    "A_sol": 0.5598500539656959
+  },
+  "schema": {
+    "features_xk_canonical": [
+      "T_air_k",
+      "T_env_k",
+      "T_int_k",
+      "T_rad1_k",
+      "T_rad2_k",
+      "T_ret_k",
+      "T_supply_k",
+      "mdot_k",
+      "T_out_k",
+      "Q_internal_k",
+      "Q_solar_trans_k"
+    ],
+    "features_xk_legacy": [
+      "T_air_k",
+      "T_env_k",
+      "T_int_k",
+      "T_rad1_k",
+      "T_rad2_k",
+      "T_ret_k",
+      "T_supply_k",
+      "mdot_k",
+      "T_out_k",
+      "Q_internal_k",
+      "I_solar_k"
+    ],
+    "labels_yk": [
+      "T_air_k1",
+      "T_env_k1",
+      "T_int_k1",
+      "T_rad1_k1",
+      "T_rad2_k1",
+      "T_ret_k1"
+    ],
+    "aux_columns": [
+      "Timestamp",
+      "episode_id",
+      "step_in_episode",
+      "policy",
+      "Occupied",
+      "Tmin",
+      "Tmax",
+      "T_supply_idf_base_k",
+      "Q_solar_air_k",
+      "Q_solar_int_k",
+      "Q_heat_proxy_k"
+    ],
+    "aliases": {
+      "I_solar_k": "Q_solar_trans_k"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_id": 2,
+  "model_name": "Fidelity",
+  "n_iter": 25,
+  "scenario": "forecast_error",
+  "seed": 42,
+  "success": true,
+  "elapsed_s": 457.868093252182,
+  "metrics": {
+    "deg_hours_cold_occ": 11.368886927313646,
+    "cvar90_cold_occ_C": 0.42190338043633446,
+    "peak_cold_violation_occ_C": 0.9569778090152603,
+    "total_energy_kWh": 3490.498739049002,
+    "fallback_rate": 0.0,
+    "median_solve_time_ms": 424.36182498931885,
+    "p95_solve_time_ms": 593.1044816970825,
+    "max_solve_time_ms": 1233.3569526672363
+  }
+}

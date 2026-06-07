@@ -1,0 +1,27 @@
+{
+  "source": "C:\\Users\\nmi03\\OneDrive - M\u00e4lardalens universitet\\Studying Folder\\New Project for Risk Aware Model then Control\\6_Neural Network Architecture\\RAMC_training_data_N3.csv",
+  "episode_id": 188,
+  "coldness_percentile": 15,
+  "mean_T_out_C": -3.7123511904761908,
+  "min_T_out_C": -26.0,
+  "max_T_out_C": 3.1,
+  "max_Q_solar_W": 19916.240248484337,
+  "solar_column_used": "I_solar_k (verified identical to Q_solar_trans_k)",
+  "cold_snap_offset_C": -10.0,
+  "forecast_bias_C": 1.5,
+  "forecast_ar_coef": 0.9,
+  "forecast_noise_std_C": 1.0,
+  "n_steps": 1008,
+  "dt_seconds": 600,
+  "q_internal_corruption": {
+    "applied_to": "ALL forecast CSVs",
+    "shift_steps": 3,
+    "shift_minutes": 30,
+    "shift_method": "boundary-padded (no circular wrap-around)",
+    "scale": 1.15,
+    "noise_frac": 0.1,
+    "ar_coef": 0.85,
+    "seed": 99,
+    "rationale": "Internal gains uncertainty is always present in real buildings. Scale > 1 (overestimate) causes MPC to under-heat, creating cold violations where RAMC risk-aware training should excel. The \"nominal\" scenario has Q_internal mismatch only; cold snap and forecast error add weather mismatch on top."
+  }
+}

@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the associated article below."
+title: "RAMC: Risk-Aware Model-then-Control for Predictive Thermal Control of Buildings"
+abstract: >-
+  Code and synthetic data accompanying the article "Risk-Aware Model Training
+  for Predictive Thermal Control of Buildings". RAMC augments conventional
+  prediction loss with a conditional value-at-risk (CVaR) penalty on operational
+  costs under perturbed inputs, embedding tail-risk awareness directly into the
+  prediction model used by a nonlinear model predictive controller.
+type: software
+authors:
+  - family-names: Monghasemi
+    given-names: Nima
+    email: nima.monghasemi@mdu.se
+    affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- add ORCID
+  - family-names: Vouros
+    given-names: Stavros
+    affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
+  - family-names: Kyprianidis
+    given-names: Konstantinos
+    affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
+  - family-names: Vadiee
+    given-names: Amir
+    affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
+license: MIT
+version: "1.0.0"
+date-released: "2026-06-06"   # <-- set to your release date
+# doi: "10.5281/zenodo.XXXXXXX"   # <-- Zenodo DOI, added after the first archived release
+repository-code: "https://github.com/<user>/<repo>"   # <-- set to your repo URL
+keywords:
+  - risk-aware training
+  - model predictive control
+  - conditional value-at-risk
+  - building energy systems
+  - thermal comfort
+preferred-citation:
+  type: article
+  title: "Risk-Aware Model Training for Predictive Thermal Control of Buildings"
+  authors:
+    - family-names: Monghasemi
+      given-names: Nima
+    - family-names: Vouros
+      given-names: Stavros
+    - family-names: Kyprianidis
+      given-names: Konstantinos
+    - family-names: Vadiee
+      given-names: Amir
+  journal: "Buildings"
+  publisher:
+    name: "MDPI"
+  year: 2026
+  # volume: 0
+  # issue: 0
+  # doi: "10.3390/buildingsXXXXXXX"   # <-- article DOI when assigned
