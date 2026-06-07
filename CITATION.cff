@@ -13,21 +13,23 @@ authors:
     given-names: Nima
     email: nima.monghasemi@mdu.se
     affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # <-- add ORCID
+    orcid: "https://orcid.org/0000-0002-9847-7477"
   - family-names: Vouros
     given-names: Stavros
     affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
+    orcid: "https://orcid.org/0000-0002-2737-3769"
   - family-names: Kyprianidis
     given-names: Konstantinos
     affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
+    orcid: "https://orcid.org/0000-0002-8466-356X"
   - family-names: Vadiee
     given-names: Amir
     affiliation: "Department of Engineering Sciences, Mälardalen University, Västerås, Sweden"
+    orcid: "https://orcid.org/0000-0001-9426-4792"
 license: MIT
 version: "1.0.0"
-date-released: "2026-06-06"   # <-- set to your release date
-# doi: "10.5281/zenodo.XXXXXXX"   # <-- Zenodo DOI, added after the first archived release
-repository-code: "https://github.com/<user>/<repo>"   # <-- set to your repo URL
+date-released: "2026-06-07"
+repository-code: "https://github.com/NimaMngh/ramc-buildings"
 keywords:
   - risk-aware training
   - model predictive control
@@ -40,16 +42,17 @@ preferred-citation:
   authors:
     - family-names: Monghasemi
       given-names: Nima
+      orcid: "https://orcid.org/0000-0002-9847-7477"
     - family-names: Vouros
       given-names: Stavros
+      orcid: "https://orcid.org/0000-0002-2737-3769"
     - family-names: Kyprianidis
       given-names: Konstantinos
+      orcid: "https://orcid.org/0000-0002-8466-356X"
     - family-names: Vadiee
       given-names: Amir
+      orcid: "https://orcid.org/0000-0001-9426-4792"
   journal: "Buildings"
   publisher:
     name: "MDPI"
   year: 2026
-  # volume: 0
-  # issue: 0
-  # doi: "10.3390/buildingsXXXXXXX"   # <-- article DOI when assigned
