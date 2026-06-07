@@ -55,3 +55,4 @@ eplustbl.*
 # Generated figures — recreated by the analysis scripts
 *.png
 **/results_*/
+**/results_*/
