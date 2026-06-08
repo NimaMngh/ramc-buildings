@@ -28,7 +28,8 @@ authors:
     orcid: "https://orcid.org/0000-0001-9426-4792"
 license: MIT
 version: "1.0.0"
-date-released: "2026-06-07"
+date-released: "2026-06-08"
+doi: "10.5281/zenodo.20590229"
 repository-code: "https://github.com/NimaMngh/ramc-buildings"
 keywords:
   - risk-aware training
